@@ -1,0 +1,761 @@
+
+* {
+    box-sizing:border-box
+} 
+
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgrey;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    background: 
+    repeating-conic-gradient(#474747 0 25%, #00000052 0 50%) 
+      50% / 40px 40px
+}
+
+    /*    HEADER    */
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+header img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+    /*     ABOUT ME    */
+
+.about-me {
+    padding: 60px 30px 0 30px;
+    margin: 0;
+    font-size: 18px;
+    position: relative;
+}
+
+.about-me-text {
+    margin: 50px 50px 150px 50px;
+    padding: 30px 50px 80px 50px;
+    text-align: left;
+    background-color: white;
+    border: 4px solid black;
+}
+
+.about-me-text img {
+    display: flex;
+    max-width: 100%;
+    position: absolute;
+    margin-left: 10%;
+    z-index: 10;
+}
+
+
+.about-me h2 {
+    color: mediumpurple;
+}
+
+.about-me p {
+    font-size: 16px;
+    padding: 30px;
+    background-color: rgba(97, 184, 255, 0.151);
+    border-radius: 20px;
+}
+
+
+.about-me-text .available {
+    padding: 3px 8px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #474747;
+    float: right;
+    width: fit-content;
+    background-color: rgba(97, 255, 97, 0.151);
+    border-radius: 20px;
+}
+      
+.heart {
+    animation: glowing 800ms infinite;
+    font-size: 18px;
+}
+
+@keyframes glowing {
+    0% {
+        color: #144e03;
+    }
+    50% {
+        color: #49e819;
+    }
+    100% {
+        color: #144e03;
+    }
+}
+
+
+    /*     WEB DESIGN    */
+
+.web-design {
+    background-color: mediumpurple;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: inline-flex;
+    text-align: center;
+    height: 420px;
+}
+
+.certification-1 {
+    background-color: grey;
+    padding: 10px;
+    margin-left: 2px;
+    text-align: center;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+    font-size: 16px;
+    color: white;
+}
+
+.certification-1 p {
+    margin-left: 10px;
+}
+
+.cert-bg-1 {
+    background-color: hotpink;
+    width: 100%;
+    float: left;
+}
+
+.outline-1 {
+    width: 60%;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+    background: black;
+    float: right;
+}
+
+    /*     3D MODELLING    */
+
+.creative-arts {
+    background-color: mediumpurple;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    text-align: center;
+    height: 420px;
+}
+
+.certification-2 {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    margin-right: 2px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    font-size: 16px;
+}
+
+.certification-2 p {
+    margin-right: 10px;
+}
+
+.cert-bg-2 {
+    background-color: hotpink;
+    width: 100%;
+    border-bottom: 1px solid black;
+} 
+
+.outline-2 {
+    width: 60%;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    background: black;
+}
+
+ /*     SLIDESHOW CONTAINERS    */
+
+        .slideshow-container {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            border: 0.5px solid black;
+            overflow: hidden;
+        }
+        
+
+        .slideshow-container2 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            border: 0.5px solid black;
+            overflow: hidden;
+        }
+
+
+        /* next & previous btns */
+
+        .prev, .next {
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            padding: 220px 10px;
+            margin: 0;
+            color: white;
+            -webkit-text-stroke: 0.2px black;
+            transition: 0.6s ease;
+            user-select: none;
+            background-color: mediumpurple;
+            opacity: 100%;
+            border-left: 0.5px solid black;
+            border-right: 0.5px solid black;
+        }
+        
+
+        /* positiong the next btn to the right */
+
+        .next {
+            right: 0;
+            background-color: mediumpurple;
+        }
+        
+        .prev:hover, .next:hover {
+            background-color: rgb(91, 61, 151);
+        }
+
+        /* images */
+
+        .slideshow-container img {
+            height: 50vh;
+        }
+
+        .mySlides1:nth-child(1) {
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: rgb(255, 187, 0);
+            padding: 0 60px;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+
+        .mySlides2:nth-child(1) {
+            background-color: lightblue;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .mySlides1:nth-child(2) {
+            background-color: rgb(32, 2, 165);
+        }
+                
+
+
+        .mySlides1:nth-child(2),
+        .mySlides2:nth-child(2) {
+            background-color: rgb(0, 0, 0);
+            width: fit-content;
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .mySlides1:nth-child(3),
+        .mySlides2:nth-child(3) {
+            background-color: lightgreen;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+
+/*     CAPTION TEXT     */
+
+ .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+} 
+
+
+/*       CONTACT      */
+
+
+.contact-bg {
+    background-image:  url(../imgs/clouds.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.contact {
+    margin-top: 60px;
+}
+
+.contact-content {
+    display: grid;
+    margin: 0 50px;
+    padding-top: 130px;
+}
+
+.contact-img {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 0;
+    margin: -70px 0;
+
+}
+
+.info {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 60px;
+    margin: 0;
+    color: black;
+    visibility: visible;   
+}
+
+.info p {
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding: 30px 30px 30px 30px;
+    margin: 0;
+    background-color: rgba(97, 184, 255, 0.151);
+    border-radius: 20px;
+
+    width: fit-content;
+}
+
+/*       FORM       */
+
+
+.form-container {
+    grid-row: 1;
+    grid-column: 2;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    width: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 10px 0;
+}
+
+/* label {
+    display: hidden;
+} */
+
+
+input {
+    background-image: url(../imgs/contact-input.png);
+    border: solid grey 2px;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    grid-column: 2;
+    grid-row: 1;
+    
+}
+
+#name {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#email {
+    margin-left: 5px;
+}
+
+
+textarea {
+    border: solid grey 2px;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    grid-row: 2;
+    grid-column: span 2;
+}
+
+form button {
+    background-color: grey;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-top: -5px;
+    width: 100%;
+    grid-row: 3;
+    grid-column: span 2;
+}
+
+input:hover,
+input:active,
+textarea:hover,
+textarea:active {
+    border: solid black 2px;
+}
+
+form button:hover {
+    background-color: rgb(66, 66, 66);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+    /*     SOCIALS   */
+
+.socials {
+    background-color: grey;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    overflow: hidden;
+    font-size: 14px;
+    border-bottom: solid black 1px;
+}
+
+.insta {
+    background-color: hotpink;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    transform: skewX(-20deg);
+    margin-left: -25px; 
+    border: solid black 1px;
+}
+
+.linkedin {
+    background-color: dodgerblue;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    transform: skewX(-20deg);
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+.artstation {
+    background-color: mediumpurple;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    transform: skewX(-20deg);
+    margin-right: -25px; 
+    border: solid black 1px;
+}
+
+.insta img:hover,
+.linkedin img:hover,
+.artstation img:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+
+.socials-logo {
+    text-align: center;
+    transform: skewX(20deg);
+}
+
+    .insta div img {
+        width: 100px;
+        margin-left: 20px;
+    }
+
+    .linkedin div img {
+        width: 125px;
+    }
+
+    .artstation div img {
+        width: 145px;
+        margin-right: 20px;
+        margin-top: 3px;
+    }
+
+
+    /*     FOOTER    */
+
+footer {
+    background-color: #146A84;
+    height: 150px;
+    padding: 25px 50px;
+    margin: 0;
+    text-align: right;
+}
+    
+.footer-img {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: fit-content;
+}
+
+.footer-img:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.footer-txt {
+    display: inline;
+    color: rgba(255, 255, 255, 0.438);
+    font-size: 12px;
+    padding-top: 6px;
+    margin: 0;
+    float: left;
+}
+
+.return-btn {
+    cursor: pointer;
+    margin-top: -45px;
+    padding: 0 10px 0 40px;
+    background: transparent;
+    outline: solid rgb(0, 54, 54) 1px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    transform: skewX(-20deg);
+    margin-right: -60px; 
+}
+
+.return-btn p {
+    padding: 20px 0;
+    margin: 0 40px 0 20px;
+
+    transform: skewX(20deg);
+}
+
+.return-btn:hover {
+    background: #092e3a;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 630px) and (max-width: 950px) {
+    .about-me-text img {
+    max-width: 80%;
+    margin-left: -70px;
+    margin-top: 10px;
+}
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1230px) {
+.slideshow-container img {
+    height: 20vh;
+} 
+
+.prev, .next {
+    padding-top: 90px;
+}
+
+.web-design a {
+    height: 2000px;
+}
+
+.contact-img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.form-container {
+    padding: 20px 0;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+div .info {
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin: 0;
+    width: 612px;
+}
+
+form {
+        width: 675px;
+        justify-self: center;
+}
+
+form button {
+    grid-row: 4;
+}
+}
+
+@media only screen and (min-width:1600px) {
+    
+.contact-content {
+    width: fit-content;
+    justify-self: center;
+}
+
+div .info {
+
+    width: 612px;
+}
+
+form {
+        width: 800px;
+        justify-self: center;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+.slideshow-container img {
+    height: 20vh;
+} 
+        
+.prev, .next {
+    padding-top: 100px;
+}
+
+.about-me {
+    padding: 0;
+    margin: 0;
+}
+
+.about-me-text {
+    padding: 20px;
+    margin: 80px 50px 100px 50px;
+    width: 75%;
+}
+
+.about-me-text .available {
+    text-align: center;
+}
+
+.about-me-text img {
+    max-width: 80%;
+    margin-left: -35px;
+    margin-top: -20px;
+}
+
+.contact-content {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.contact p {
+    padding: 30px;
+    margin: 0;    
+}
+
+div .info {
+    padding: 10px 30px 0 30px;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.contact-img {
+    width: 320px;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.form-container {
+    padding: 20px 0;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+form {
+    grid-template-columns: 1fr;
+        width: 375px;
+        gap: 5px;
+        justify-self: center;
+}
+
+#email,
+#name {
+    grid-column: 1;
+    width: 290px;
+}
+
+#name {
+    grid-row: 1;
+}
+
+#email {
+    grid-row: 2;
+    margin: 0;
+}
+
+textarea {
+    margin: 0;
+    grid-row: 3;
+     width: 290px;
+}
+
+form button {
+    grid-row: 4;
+     width: 290px;
+}
+
+.socials-logo {
+    text-align: center;
+    transform: skewX(20deg);
+}
+
+    .insta div img {
+        width: 55px;
+        margin-left: 20px;
+    }
+
+    .linkedin div img {
+        width: 70px;
+    }
+
+    .artstation div img {
+        width: 80px;
+        margin-right: 20px;
+        margin-top: 3px;
+    }
+
+footer {
+    margin: 0;
+    padding: 10px;    
+}
+
+.footer-txt {
+    width: 50%;
+    text-align: left;
+}
+
+.return-btn {
+    padding-left: 40px;
+}
+
+.return-btn p {
+    padding: 9;
+    margin: 2px;
+    margin-right: 70px;
+}
+}
